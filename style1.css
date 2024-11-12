@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+     color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: rgb(8, 212, 165);
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*=== Navbar ===*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./pink.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: darkred;
+    border-radius: 30px;
+    color: whitesmoke;
+
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+    width: 25px;
+    display: none;
+}
+
+/*=== Events ===*/
+section {
+    width: 80%;
+    margin:80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:  black;
+}
+/* Mobile Device */
+
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+
+    }
+    .logo {
+       position: absolute; 
+       top: 30px;
+       left: 30px;
+    }
+
+    .cards-section {
+       position: absolute;
+
+   }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: pink;
+        margin-top: -9000px;
+        transition: all 0.5s ease;
+
+
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+
+
+    }
+}
+
+form {
+    width: 400px;
+    margin: 0vh auto 0 auto;
+    padding: 20px;
+    padding-top: 200px;
+    border-radius: 4px;
+    font-size: 12px;
+
+}
+
+button {
+    background-color: none;
+    margin-left: 6px;
+    border-radius: 10px;
+    padding: 8px;
+    width: 80px;
+}
+
+form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 20%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 70%;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.errord {
+    color: red;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+hr {
+    margin-top: 80px;
+}
+.text {
+    text-align: center;
+    margin-top: 40px;
+}
+
+table {
+    margin-top: 50px;
+    table-layout: fixed;
+
+}
+tr {
+    border: 2px solid rgb(6, 6, 6);
+    /* text-align: center; */
+
+}
+
+td {
+    border: 2px solid black;
+    width:33%
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
